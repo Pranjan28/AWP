@@ -1,0 +1,16 @@
+#a,#b,#c
+
+
+
+
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #carouselExampleFade{
+    
+      background-color: cadetblue;
+  }
