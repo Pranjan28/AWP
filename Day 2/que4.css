@@ -1,0 +1,9 @@
+img{
+    position: absolute;
+    width: 70%;
+    height: 50%;
+}
+
+.active{
+    z-index: 99;
+}

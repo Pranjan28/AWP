@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Que4- jQuery Slide show</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="que4.js"></script> -->
+    <script>
+        function createSlideShow() {
+            console.log("Inside interval function");
+            var $active = $('#slider IMG.ACTIVE');
+            console.log($active)
+            var $next = $active.next();
+
+            $next.addClass('active');
+            $active.removeClass('active');
+        }
+        // $(function () {
+        // setInterval("createSlideShow()", 5000);
+        // });
+
+        $(document).ready(function () {
+            console.log("Inside function");
+            setInterval("createSlideShow()", 5000);
+        });
+    </script>
+    <link rel="stylesheet" href="que4.css">
+
+
+</head>
+
+<body>
+    <div id="slider">
+        <h2>Slide show</h2>
+        <img src="E:\AWP53_58\Images\image1.jpg" class="active" alt="Image 1">
+        <img src="E:\AWP53_58\Images\image2.jpg" alt="Image 2">
+        <img src="E:\AWP53_58\Images\image3.jpg" alt="Image 3">
+        <img src="E:\AWP53_58\Images\image4.jpg" alt="Image 4">
+    </div>
+</body>
+
+</html>
