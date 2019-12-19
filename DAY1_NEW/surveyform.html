@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Survey Form</title>
+
+</head>
+
+<body>
+    <h1 align=center>Survey Form</h1>
+
+    <H3 align=center>Let us know how we can improve freecodecamp</H3>
+    
+    <form>
+        <p>Name: <input type=text value:"Name" placeholder="Enter your name" required></p>
+        <p> Email: <input type="email" value:"Email" required placeholder="Enter your email"> </p>
+        <p> Age: <input type="number" value:"Age" placeholder="Enter your age" required> </p>
+
+        <label for="listRole">Which option best describes your current role?</label>
+        <input id="listRole" list="role">
+        <datalist id="role">
+            <option value="student" selected>
+            <option value="teacher">
+        </datalist>
+        <h5>HOW??</h5>
+        <label for="r1"></label>
+       <input type="radio" id="r1" name="choose" value="definately" checked>Definately<br>
+       <label for="r1"></label>
+       <input type="radio" id="r2" name="choose" value="maybe" >maybe<br>
+       <label for="r1"></label>
+       <input type="radio" id="r3" name="choose" value="not sure" >not sure<br><br>
+
+       <label for="listRoles">What do you like most in fcc</label>
+       <input id="listRoles" list="roles">
+       <datalist id="roles">
+           <option value ="select an option" selected></option>
+       </datalist><br>
+        <h5>Things that should be improved in the future(Check all that apply)</h5>
+       <label for="l1" ></label>
+       <input  type="radio" id="l1" name="choose" value="front end projects" checked> front end projects <br>
+       <label for="l2" ></label>
+       <input  type="radio" id="l2" name="choose" value="back end projects" > back end projects <br>
+       <label for="l3" ></label>
+       <input type="radio" id="l3" name="choose" value="Data Visulaiztion" > Data Visulaiztion <br><br>
+        <input type ="submit" value="Submit">
+
+
+        <!-- <p>Which option best describes your current role? <button type=text value:"Name" placeholder="Enter your name"></p> -->
+    </form>
+</div>
+</body>
+</html>
